@@ -1,6 +1,5 @@
-package collections;
+package less10Collections;
 
-import javax.management.ObjectName;
 import java.util.*;
 
 //Создать список оценок учеников с помощью ArrayList.

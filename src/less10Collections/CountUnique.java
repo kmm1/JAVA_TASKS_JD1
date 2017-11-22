@@ -1,6 +1,4 @@
-package collections;
-
-import java.util.*;
+package less10Collections;
 
 //   1 Написать метод CountUnique который принимает целочисленный список в качестве параметра
 //    и возвращает количество уникальных целых чисел в этом списке.
@@ -18,8 +16,19 @@ import java.util.*;
 //    Напимер,в данном случае вернется true:{Marty=Stepp, Stuart=Reges, Jessica=Miller}
 //    А в данном false:{Marty=Stepp, Stuart=Reges, Jessica=Stepp}.
 
-// 5
+//    5
 // заполнить список случайными числами и посчитать частоту их встречаемости
+
+//   6
+//Дан список целых чисел. Найти средне всех нечетных чисел, делящихся на 5.
+
+//   7
+//Дан список строк. Найти кол-во уникальных строк длинной более 8 символов.
+
+//  8
+//  Дана Map <String, Integer>. Найти сумму всех значений, длинна ключей которых меньше 7 символов.
+
+//
 
 
 public class CountUnique {
@@ -139,6 +148,82 @@ public class CountUnique {
 //    }
 //}
 
+    //6
+//    public static void main(String[] args) {
+//        List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 25));
+//        List<Integer> list2 = new ArrayList<>();
+//        int count = 0;
+//        int summ = 0;
+//        int average=0;
+//
+//        for (int i = 0; i <list.size() ; i++) {
+//            Integer number = list.get(i);
+//            if (number % 5 == 0 & number % 2 != 0) {
+//                count=++count;
+//                summ = number+summ;
+//                average=summ/count;
+//            }
+//        }
+//        System.out.println(average);
+//    }
+
+
+    //7
+//    public static void main(String[] args) {
+//        ArrayList<String> array = new ArrayList<>(Arrays.asList("words as", "words as", "song is ", "sometimes"));
+//        Map<String, Integer> map = new TreeMap<>();
+//        HashSet<String> set = new HashSet<>();
+//        boolean countLetters;
+//        for (int i = 0; i < array.size(); i++) {
+//            String word = array.get(i);
+//            Integer fraquancy = map.get(word);
+//            map.put(word, fraquancy == null ? 1 : fraquancy + 1);
+//        }
+//        for (Map.Entry entry : map.entrySet()) {
+//            Integer number = (Integer) entry.getValue();
+//            Object value = entry.getValue();
+//            Object key = entry.getKey();
+//            if (number != 1) {
+//                map.remove(key, value);
+//            }
+//        }
+//        List<String> array2 = new ArrayList<>(map.keySet());
+//        for (int y = 0; y < array2.size(); y++) {
+//            if (countLetters = (array2.get(y).length() >= 8)) {
+//                set.add(array2.get(y));
+//            }
+//        }
+//        System.out.println(set);
+//    }
+
+
+    //8
+    //  Дана Map <String, Integer>. Найти сумму всех значений, длинна ключей которых меньше 7 символов.
+//    public static void main(String[] args) {
+//        HashMap<String, Integer> map = new HashMap<>();
+//        Integer myNumber = 7;
+//        map.put("a1", 1);
+//        map.put("aaaaaaa7", 7);
+//        map.put("aaaaaaaaaa10", 10);
+//        map.put("aaa3", 3);
+//        Iterator <String> iterator = map.keySet().iterator();
+//        while (iterator.hasNext()){
+//            String key = iterator.next();
+//            if (key.length()>=myNumber){
+//                iterator.remove();
+//            }
+//        }
+//        List<Integer> list = new ArrayList<>(map.values());
+//        Integer summ = 0;
+//        for (int i = 0; i < list.size(); i++) {
+//            Integer number = list.get(i);
+//            summ = summ + number;
+//        }
+//        System.out.println(summ);
+//    }
+
 
 
 }
+
+

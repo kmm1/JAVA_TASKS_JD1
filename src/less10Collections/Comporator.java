@@ -1,4 +1,4 @@
-package collections;
+package less10Collections;
 
 import java.util.*;
 
