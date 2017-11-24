@@ -1,0 +1,23 @@
+
+public class Time {
+    private int sec;
+    private int min;
+    private int hour;
+
+    public int getSec() {
+        return sec;
+    }
+
+    public int getMin() {
+        return min;
+    }
+
+    public int getHour() {
+        return hour;
+    }
+
+    public Time(int sec, int min, int hour) {
+        this.sec = sec;
+        this.min = min;
+        this.hour = hour;
+    }

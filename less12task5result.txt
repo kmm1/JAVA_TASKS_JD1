@@ -1,0 +1,23 @@
+
+{ emiT ssalc cilbup
+;ces tni etavirp    
+;nim tni etavirp    
+;ruoh tni etavirp    
+
+{ )(ceSteg tni cilbup    
+;ces nruter        
+}    
+
+{ )(niMteg tni cilbup    
+;nim nruter        
+}    
+
+{ )(ruoHteg tni cilbup    
+;ruoh nruter        
+}    
+
+{ )ruoh tni ,nim tni ,ces tni(emiT cilbup    
+;ces = ces.siht        
+;nim = nim.siht        
+;ruoh = ruoh.siht        
+}    
