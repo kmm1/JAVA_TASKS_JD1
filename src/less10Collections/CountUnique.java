@@ -58,7 +58,8 @@ public class CountUnique {
 //}
 
 
-    //2
+//2 Создайте контейнер Set со всеми гласными буквами. Подсчитать и вывести количество
+//    гласных в каждом входном слове, а также вывидите количество гласных во входном слове.
 //    private static Map<String, Integer> CountVowel() {
 //        Scanner scanner = new Scanner(System.in);
 //        Map<String, Integer> map = new HashMap<>();
@@ -82,8 +83,9 @@ public class CountUnique {
 //        System.out.println(CountVowel());
 //    }
 
+//  3 Задан текст на английском языке. Выделить все различные слова.
+//    Для каждого слова подсчитать часоту его встречаемости.Слова, отличающиеся регистром букв, считать разными.
 
-    //3
 //    private static Map<String, Integer> CountWords(String anyText) {
 //        anyText = anyText.replaceAll("[-.?!)(,:]", "");
 //        List<String> list = new ArrayList<>(Arrays.asList(anyText.split(" ")));
