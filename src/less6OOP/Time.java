@@ -1,7 +1,7 @@
-package les6OOP;
+package less6OOP;
 
-import static les6OOP.Time.timeInSecMinHour;
-import static les6OOP.Time.timeInSeconds;
+import static less6OOP.Time.timeInSecMinHour;
+import static less6OOP.Time.timeInSeconds;
 
 //Создайте класс описывающий промежуток времени.
 //Сам промежуток времени должен задаваться 3 свойствами: секундами минутами часами.

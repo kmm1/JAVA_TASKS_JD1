@@ -1,4 +1,4 @@
-package les6OOP.figures;
+package less6OOP.figures;
 
 
 /**

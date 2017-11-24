@@ -204,14 +204,15 @@ public class Functions {
 
     //7
     //Имеется промежуток времени в секундах. Следует его вывести в виде часов, минут и секунд.
-//    public static void main(String[] args) {
-//        int secDataEntry = 5007;
-//        int hour = secDataEntry / 3600;
-//        int secDataEntry2 = secDataEntry % 3600;
-//        int min = secDataEntry2 / 60;
-//        int sec = secDataEntry2 % 60;
-//        System.out.println("часы: " + hour + "минуты: " + min + "секунды:" + sec);
-//    }
+    public static void main(String[] args) {
+        int secDataEntry = 1000;
+        int hour = secDataEntry / 3600;
+        secDataEntry = secDataEntry % 3600;
+        System.out.println(secDataEntry);
+        int min = secDataEntry / 60;
+        int sec = secDataEntry % 60;
+        System.out.println("часы: " + hour + " минуты: " + min + " секунды:" + sec);
+    }
 
     //8
     //Имеется целое число. Надо подсчитать сумму цифр данного числа.
@@ -297,110 +298,110 @@ public class Functions {
 //Вампирами называют числа состоящие из четного кол-ва цифр и полученные переумножением пары чмсел
 // каждое из которых содержит половину результата.
 // Цифры берутся из исходного числа в произвольном порядке. Завершающие нули недопустимы.
-    public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        Set<Integer> result = new HashSet<>();
-        int count = 0;
-        int firstNumber = 0;
-        int secondNumber = 0;
-        int thirdNumber = 0;
-        int forthNumber = 0;
+//    public static void main(String[] args) {
+//        List<Integer> list = new ArrayList<>();
+//        Set<Integer> result = new HashSet<>();
+//        int count = 0;
+//        int firstNumber = 0;
+//        int secondNumber = 0;
+//        int thirdNumber = 0;
+//        int forthNumber = 0;
+//
+//        for (int i = 1000; i < 10000; i++) {
+//            list.add(i);
+//        }
+//        for (int i = 0; i < list.size(); i++) {
+//            int entryNumber = list.get(i);
+//            firstNumber = entryNumber % 10;
+//            secondNumber = (entryNumber / 10) % 10;
+//            thirdNumber = (entryNumber / 100) % 10;
+//            forthNumber = (entryNumber / 1000) % 10;
+//            count = 0;
+//            if (firstNumber == 0) {
+//                count++;
+//            }
+//            if (secondNumber == 0) {
+//                count++;
+//            }
+//            if (thirdNumber == 0) {
+//                count++;
+//            }
+//
+//            if (forthNumber == 0) {
+//                count++;
+//            }
+//            if (count >= 2) {
+//                continue;
+//            } else {
+//                String case1 = String.valueOf((firstNumber) + String.valueOf(secondNumber));
+//                String case2 = String.valueOf((firstNumber) + String.valueOf(thirdNumber));
+//                String case3 = String.valueOf((firstNumber) + String.valueOf(forthNumber));
+//                String case4 = String.valueOf((secondNumber) + String.valueOf(firstNumber));
+//                String case5 = String.valueOf((secondNumber) + String.valueOf(thirdNumber));
+//                String case6 = String.valueOf((secondNumber) + String.valueOf(forthNumber));
+//                String case7 = String.valueOf((thirdNumber) + String.valueOf(firstNumber));
+//                String case8 = String.valueOf((thirdNumber) + String.valueOf(secondNumber));
+//                String case9 = String.valueOf((thirdNumber) + String.valueOf(forthNumber));
+//                String case10 = String.valueOf((forthNumber) + String.valueOf(firstNumber));
+//                String case11 = String.valueOf((forthNumber) + String.valueOf(secondNumber));
+//                String case12 = String.valueOf((forthNumber) + String.valueOf(thirdNumber));
+//
+//                Integer multiplication1 = Integer.valueOf(case11) * Integer.valueOf(case7);
+//                if (multiplication1 == entryNumber) {
+//                    result.add(multiplication1);
+//                }
+//                Integer multiplication2 = Integer.valueOf(case1) * Integer.valueOf(case9);
+//                if (multiplication2 == entryNumber) {
+//                    result.add(multiplication2);
+//                }
+//                Integer multiplication3 = Integer.valueOf(case1) * Integer.valueOf(case12);
+//                if (multiplication3 == entryNumber) {
+//                    result.add(multiplication3);
+//                }
+//                Integer multiplication4 = Integer.valueOf(case2) * Integer.valueOf(case6);
+//                if (multiplication4 == entryNumber) {
+//                    result.add(multiplication4);
+//                }
+//                Integer multiplication5 = Integer.valueOf(case2) * Integer.valueOf(case11);
+//                if (multiplication5 == entryNumber) {
+//                    result.add(multiplication5);
+//                }
+//                Integer multiplication6 = Integer.valueOf(case3) * Integer.valueOf(case5);
+//                if (multiplication6 == entryNumber) {
+//                    result.add(multiplication6);
+//                }
+//                Integer multiplication7 = Integer.valueOf(case3) * Integer.valueOf(case8);
+//                if (multiplication7 == entryNumber) {
+//                    result.add(multiplication7);
+//                }
+//                Integer multiplication8 = Integer.valueOf(case4) * Integer.valueOf(case9);
+//                if (multiplication8 == entryNumber) {
+//                    result.add(multiplication8);
+//                }
+//                Integer multiplication9 = Integer.valueOf(case4) * Integer.valueOf(case12);
+//                if (multiplication9 == entryNumber) {
+//                    result.add(multiplication9);
+//                }
+//                Integer multiplication10 = Integer.valueOf(case10) * Integer.valueOf(case5);
+//                if (multiplication10 == entryNumber) {
+//                    result.add(multiplication10);
+//                }
+//                Integer multiplication11 = Integer.valueOf(case10) * Integer.valueOf(case8);
+//                if (multiplication11 == entryNumber) {
+//                    result.add(multiplication11);
+//                }
+//                Integer multiplication12 = Integer.valueOf(case7) * Integer.valueOf(case6);
+//                if (multiplication12 == entryNumber) {
+//                    result.add(multiplication12);
+//                }
+//            }
+//        }
+//        System.out.println("--------------");
+//        System.out.println(result);
+//        }
 
-        for (int i = 1000; i < 10000; i++) {
-            list.add(i);
-        }
-        for (int i = 0; i < list.size(); i++) {
-            int entryNumber = list.get(i);
-            firstNumber = entryNumber % 10;
-            secondNumber = (entryNumber / 10) % 10;
-            thirdNumber = (entryNumber / 100) % 10;
-            forthNumber = (entryNumber / 1000) % 10;
-            count = 0;
-            if (firstNumber == 0) {
-                count++;
-            }
-            if (secondNumber == 0) {
-                count++;
-            }
-            if (thirdNumber == 0) {
-                count++;
-            }
 
-            if (forthNumber == 0) {
-                count++;
-            }
-            if (count >= 2) {
-                continue;
-            } else {
-                String case1 = String.valueOf((firstNumber) + String.valueOf(secondNumber));
-                String case2 = String.valueOf((firstNumber) + String.valueOf(thirdNumber));
-                String case3 = String.valueOf((firstNumber) + String.valueOf(forthNumber));
-                String case4 = String.valueOf((secondNumber) + String.valueOf(firstNumber));
-                String case5 = String.valueOf((secondNumber) + String.valueOf(thirdNumber));
-                String case6 = String.valueOf((secondNumber) + String.valueOf(forthNumber));
-                String case7 = String.valueOf((thirdNumber) + String.valueOf(firstNumber));
-                String case8 = String.valueOf((thirdNumber) + String.valueOf(secondNumber));
-                String case9 = String.valueOf((thirdNumber) + String.valueOf(forthNumber));
-                String case10 = String.valueOf((forthNumber) + String.valueOf(firstNumber));
-                String case11 = String.valueOf((forthNumber) + String.valueOf(secondNumber));
-                String case12 = String.valueOf((forthNumber) + String.valueOf(thirdNumber));
-
-                Integer multiplication1 = Integer.valueOf(case11) * Integer.valueOf(case7);
-                if (multiplication1 == entryNumber) {
-                    result.add(multiplication1);
-                }
-                Integer multiplication2 = Integer.valueOf(case1) * Integer.valueOf(case9);
-                if (multiplication2 == entryNumber) {
-                    result.add(multiplication2);
-                }
-                Integer multiplication3 = Integer.valueOf(case1) * Integer.valueOf(case12);
-                if (multiplication3 == entryNumber) {
-                    result.add(multiplication3);
-                }
-                Integer multiplication4 = Integer.valueOf(case2) * Integer.valueOf(case6);
-                if (multiplication4 == entryNumber) {
-                    result.add(multiplication4);
-                }
-                Integer multiplication5 = Integer.valueOf(case2) * Integer.valueOf(case11);
-                if (multiplication5 == entryNumber) {
-                    result.add(multiplication5);
-                }
-                Integer multiplication6 = Integer.valueOf(case3) * Integer.valueOf(case5);
-                if (multiplication6 == entryNumber) {
-                    result.add(multiplication6);
-                }
-                Integer multiplication7 = Integer.valueOf(case3) * Integer.valueOf(case8);
-                if (multiplication7 == entryNumber) {
-                    result.add(multiplication7);
-                }
-                Integer multiplication8 = Integer.valueOf(case4) * Integer.valueOf(case9);
-                if (multiplication8 == entryNumber) {
-                    result.add(multiplication8);
-                }
-                Integer multiplication9 = Integer.valueOf(case4) * Integer.valueOf(case12);
-                if (multiplication9 == entryNumber) {
-                    result.add(multiplication9);
-                }
-                Integer multiplication10 = Integer.valueOf(case10) * Integer.valueOf(case5);
-                if (multiplication10 == entryNumber) {
-                    result.add(multiplication10);
-                }
-                Integer multiplication11 = Integer.valueOf(case10) * Integer.valueOf(case8);
-                if (multiplication11 == entryNumber) {
-                    result.add(multiplication11);
-                }
-                Integer multiplication12 = Integer.valueOf(case7) * Integer.valueOf(case6);
-                if (multiplication12 == entryNumber) {
-                    result.add(multiplication12);
-                }
-            }
-        }
-        System.out.println("--------------");
-        System.out.println(result);
-        }
-
-
-    }
+}
 
 
 

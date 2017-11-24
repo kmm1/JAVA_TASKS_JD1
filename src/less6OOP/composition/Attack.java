@@ -1,4 +1,4 @@
-package les6OOP.composition;
+package less6OOP.composition;
 
 /**
  * Created by Tom on 21.11.2017.

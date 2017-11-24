@@ -1,4 +1,4 @@
-import com.sun.deploy.util.ArrayUtil;
+package less4Args;
 
 import java.util.Arrays;
 
@@ -87,7 +87,7 @@ public class Less4Args {
     public static void main(String[] args) {
         int[] array = new int[11];
         for (int i = 0; i < array.length; i++) {
-            int a = (int) (Math.random() * 10);
+            int a = (int) (Math.random() * 10+1);
             array[i] = a;
         }
         System.out.println(Arrays.toString(array));

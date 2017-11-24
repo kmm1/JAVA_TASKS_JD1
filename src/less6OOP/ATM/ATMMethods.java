@@ -1,4 +1,4 @@
-package les6OOP.ATM;
+package less6OOP.ATM;
 
 /**
  * Created by Tom on 22.11.2017.

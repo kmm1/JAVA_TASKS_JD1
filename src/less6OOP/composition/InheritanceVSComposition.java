@@ -1,4 +1,4 @@
-package les6OOP.composition;
+package less6OOP.composition;
 
 /**
  * Created by Tom on 21.11.2017.
@@ -11,7 +11,7 @@ public class InheritanceVSComposition {
 
 
     // if you need another implementation of move()
-    // there is no need to change les6OOP.composition.Insect, we can quickly use new method to attack
+    // there is no need to change less6OOP.composition.Insect, we can quickly use new method to attack
 
     Bee b = new Bee(1, "black", new AttackImpl("fly", "sting"));
                 b.attack();

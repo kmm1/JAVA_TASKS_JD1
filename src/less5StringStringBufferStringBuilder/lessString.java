@@ -1,6 +1,4 @@
-package less4StringStringBufferStringBuilder;
-
-import java.util.*;
+package less5StringStringBufferStringBuilder;
 
 /**
  * Created by Tom on 24.11.2017.

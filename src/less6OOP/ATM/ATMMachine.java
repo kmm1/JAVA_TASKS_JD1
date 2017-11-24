@@ -1,4 +1,4 @@
-package les6OOP.ATM;
+package less6OOP.ATM;
 
 import java.util.HashMap;
 import java.util.Map;

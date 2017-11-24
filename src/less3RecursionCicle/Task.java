@@ -26,16 +26,15 @@ public class Task {
 
 //    public static void main(String[] args) {
 //        int n = 17;
-//        boolean f = true;
-//        int i;
-//        for (i = 2; i < n; i++) {
-//            if (n % i == 0) {
-//                f = false;
-//                break;
+//        System.out.println(isSimple(48));
+//    }
+//        public static boolean isSimple (int n){
+//        for (int i = 2; i <n ; i++) {
+//            if (n%i==0){
+//                return false;
 //            }
 //        }
-//        if (f) System.out.println("число простое");
-//        else System.out.println("число составное ");
+//        return true;
 //    }
 
     //Написать программу вычисляющую факториал введенного целого числа. Напимер 5! = 1*2*3*4*5=120.
@@ -76,32 +75,32 @@ public class Task {
     //3 среднее кол-во осадков за этот период,
     //4 максимальное количество дневных осадков за этот период
     //Не использовать массивы.
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Integer days = scanner.nextInt();
-        Double precipitationSumm = 0.0;
-        Double precipitationAverage = 0.0;
-        Double precipitationMax = 0.0;
-
-        ArrayList<Double> precipitationStatistics = new ArrayList();
-        for (int i = 1; i < days + 1; i++) {
-            System.out.println("Введите кол-во осадков за " + i + " день");
-            Double precipitation = scanner.nextDouble();
-            precipitationStatistics.add(precipitation);
-        }
-        for (int i = 0; i < precipitationStatistics.size(); i++) {
-            precipitationSumm += precipitationStatistics.get(i);
-        }
-        precipitationAverage = precipitationSumm / days;
-        Collections.sort(precipitationStatistics, new Comparator<Double>() {
-            @Override
-            public int compare(Double firstNumber, Double secondNumber) {
-                return firstNumber.compareTo(secondNumber);
-            }
-        });
-        precipitationMax = precipitationStatistics.get(precipitationStatistics.size() - 1);
-        System.out.println("Количество дней: " + days + "\nCумма осадков за этот период " + precipitationSumm + "\nСреднее кол-во осадков за этот период " + precipitationAverage + "\nМаксимальное количество дневных осадков за этот период" + precipitationMax);
-
-    }
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        Integer days = scanner.nextInt();
+//        Double precipitationSumm = 0.0;
+//        Double precipitationAverage = 0.0;
+//        Double precipitationMax = 0.0;
+//
+//        ArrayList<Double> precipitationStatistics = new ArrayList();
+//        for (int i = 1; i < days + 1; i++) {
+//            System.out.println("Введите кол-во осадков за " + i + " день");
+//            Double precipitation = scanner.nextDouble();
+//            precipitationStatistics.add(precipitation);
+//        }
+//        for (int i = 0; i < precipitationStatistics.size(); i++) {
+//            precipitationSumm += precipitationStatistics.get(i);
+//        }
+//        precipitationAverage = precipitationSumm / days;
+//        Collections.sort(precipitationStatistics, new Comparator<Double>() {
+//            @Override
+//            public int compare(Double firstNumber, Double secondNumber) {
+//                return firstNumber.compareTo(secondNumber);
+//            }
+//        });
+//        precipitationMax = precipitationStatistics.get(precipitationStatistics.size() - 1);
+//        System.out.println("Количество дней: " + days + "\nCумма осадков за этот период " + precipitationSumm + "\nСреднее кол-во осадков за этот период " + precipitationAverage + "\nМаксимальное количество дневных осадков за этот период" + precipitationMax);
+//
+//    }
 
 }

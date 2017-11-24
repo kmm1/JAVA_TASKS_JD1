@@ -48,7 +48,7 @@ public class Comporator {
         class ByAgeComparator implements Comparator<Actor> {
             @Override
             public int compare(Actor firstActor, Actor secondActor) {
-                return new Integer(firstActor.getAge()).compareTo(secondActor.getAge());
+                return  new Integer(firstActor.getAge()).compareTo(secondActor.getAge());
             }
         }
 
