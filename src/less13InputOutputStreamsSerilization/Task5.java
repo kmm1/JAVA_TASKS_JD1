@@ -7,7 +7,7 @@ import java.util.*;
 
 //5 В файле содержащим фамилии студентов и их оценки записать прописными буквами фамилии
 // тех студентов которые имеют средний балл более 7.
-public class task5 {
+public class Task5 {
     public static void main(String[] args) {
 //        Map<String, List<Integer>> map = new HashMap();
 //        map.put("Петров", Arrays.<Integer>asList(2, 5));

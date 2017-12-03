@@ -8,17 +8,15 @@ import java.util.Scanner;
 
 //Задан файл с текстом. Найти и вывести в консоль все слова для которых последняя буква
 // одного слова совпадает с первой буквой следующего слова
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
         String path = "less12task1.txt";
         File file = new File(path);
         List<String> list = new ArrayList<>();
-        String str = "";
 
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNext()) {
-                String s = scanner.next();
-                s = s.toUpperCase().replaceAll("[!?,.)(]", "");
+                String s = scanner.next().toUpperCase().replaceAll("[!?,.)(]", "");
                 if (!s.equals("")) {
                     list.add(s);
                 }

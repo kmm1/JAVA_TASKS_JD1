@@ -12,7 +12,7 @@ import java.util.TreeMap;
 // 7 Задан файл со стихотворением Есенина.
 //  Подсчитать частоту повторяемости каждого слова в стихотворении и вывести эти слова
 //  в порядке возрастания частоты повторяемости
-public class task7 {
+public class Task7 {
     public static void main(String[] args) {
 
         File inputFile = new File("less13task5.txt");

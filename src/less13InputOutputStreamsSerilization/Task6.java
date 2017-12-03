@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class task6 {
+public class Task6 {
     public static void main(String[] args) {
 
         File inputFile = new File("less13task5.txt");
