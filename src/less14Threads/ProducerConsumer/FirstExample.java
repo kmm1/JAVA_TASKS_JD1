@@ -4,12 +4,12 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import static less14Threads.ProducerConsumer.Main.list;
+import static less14Threads.ProducerConsumer.FirstExample.list;
 
 /**
  * Created by Tom on 04.12.2017.
  */
-public class Main {
+public class FirstExample {
     public static List<Integer> list = Collections.synchronizedList(new LinkedList<>());
 
     public static void main(String[] args) {

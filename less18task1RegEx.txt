@@ -1,0 +1,12 @@
+<html>
+        <head>
+         <title>Тег BODY, атрибут text</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        </head>
+        <body text="maroon">
+         <p>Пример текста</p>
+         <p id=\"pl\"> text text </p>
+         <p id=\"pl\"> </p>
+         <a><a>
+        </body>
+       </html>
