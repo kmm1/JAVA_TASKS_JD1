@@ -1,4 +1,4 @@
-package less19Pattern.duck.quackBehavior;
+package less19Pattern.stratagy.duck.quackBehavior;
 
 /**
  * Created by Tom on 07.12.2017.

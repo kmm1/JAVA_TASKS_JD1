@@ -1,6 +1,6 @@
-package less19Pattern.duck;
+package less19Pattern.stratagy.duck;
 
-import less19Pattern.duck.flyBehavior.FlyRocketPowered;
+import less19Pattern.stratagy.duck.flyBehavior.FlyRocketPowered;
 
 /**
  * Created by Tom on 07.12.2017.

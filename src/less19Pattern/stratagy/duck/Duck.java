@@ -1,7 +1,7 @@
-package less19Pattern.duck;
+package less19Pattern.stratagy.duck;
 
-import less19Pattern.duck.flyBehavior.FlyBehavior;
-import less19Pattern.duck.quackBehavior.QuackBehavior;
+import less19Pattern.stratagy.duck.flyBehavior.FlyBehavior;
+import less19Pattern.stratagy.duck.quackBehavior.QuackBehavior;
 
 /**
  * Created by Tom on 07.12.2017.
